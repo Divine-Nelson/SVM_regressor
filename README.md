@@ -4,7 +4,9 @@ This project applies multiple regression algorithms to the California Housing da
 ## Project Overview
 
 • Goal: Evaluate and compare different machine learning regressors to identify which performs best on housing price prediction.
+
 • Dataset: California Housing dataset (1990 census data).
+
 • Target variable: Median house value.
 
 
