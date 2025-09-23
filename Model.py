@@ -14,14 +14,11 @@ from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import cross_val_score
 import seaborn as sns
-<<<<<<< HEAD
 
 
-=======
 from sklearn.metrics import mean_absolute_error
 
     
->>>>>>> 0c63b40d7f9c3fcc698267e3a067b7c67c05e69e
 
 rooms_ix, bedrooms_ix, population_ix, households_ix = 3, 4, 5, 6
 class Second_transformer(BaseEstimator, TransformerMixin):
@@ -187,12 +184,6 @@ print("Mean:", tree_rmse_scores.mean())
 print("Standard deviation:", tree_rmse_scores.std())
 
 
-<<<<<<< HEAD
-"""Mode	LR	DT	RF	SVM(l)	SVM(n)
-mean	69104	71629	50266	70158	96268
-std	2880.33	2914.03	2312	2004.15	1960
-"""
-=======
 #Evaluating the model with Mean absolute error for rbf
 absolute_prediction_error = mean_absolute_error(y_train, nonlinear_predictions)
 print(absolute_prediction_error)
@@ -205,7 +196,6 @@ print(absolute_prediction_error)
 absolute_prediction_error = mean_absolute_error(y_train, poly_predictions)
 print(absolute_prediction_error)
 
->>>>>>> 0c63b40d7f9c3fcc698267e3a067b7c67c05e69e
 
 
 # Data (replace with your actual numbers)
