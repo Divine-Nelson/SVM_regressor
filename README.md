@@ -9,4 +9,18 @@ This project applies multiple regression algorithms to the California Housing da
 
 • Target variable: Median house value.
 
+## Methods
+
+
+
+A full preprocessing pipeline was built, including:
+
+• Handling missing values with median imputation
+
+• Feature engineering (e.g., rooms per household, bedrooms per room)
+
+• Scaling numerical features and encoding categorical features
+
+Support Vector Regressor (SVR, linear, RBF kernels, polynomial kernels) were trained and evaluated with other models like Linear Regression, Decision tree, Random forest tree 
+
 
