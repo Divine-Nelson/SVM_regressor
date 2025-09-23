@@ -14,6 +14,7 @@ from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import cross_val_score
 import seaborn as sns
+from sklearn.metrics import mean_absolute_error
 
     
 
@@ -179,6 +180,21 @@ tree_rmse_scores = np.sqrt(-scores)
 print("Scores:", tree_rmse_scores)
 print("Mean:", tree_rmse_scores.mean())
 print("Standard deviation:", tree_rmse_scores.std())
+
+
+#Evaluating the model with Mean absolute error for rbf
+absolute_prediction_error = mean_absolute_error(y_train, nonlinear_predictions)
+print(absolute_prediction_error)
+
+#Evaluating the model with Mean absolute error for linear
+absolute_prediction_error = mean_absolute_error(y_train, lin_predictions)
+print(absolute_prediction_error)
+
+#Evaluating the model with Mean absolute error for polynomial
+absolute_prediction_error = mean_absolute_error(y_train, poly_predictions)
+print(absolute_prediction_error)
+
+
 
 # Data (replace with your actual numbers)
 models = ["LR", "DT", "SVM-l", "SVM-n", "RF", "SVM_p"]
